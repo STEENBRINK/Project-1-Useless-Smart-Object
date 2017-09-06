@@ -49,7 +49,7 @@ void Remember(int reading) {
     Serial.println(String(min_reading));
     }
 
-  if (n == 19 && (max_reading - min_reading) >= 100){
+  if (max_reading - min_reading >= 50){
     Serial.println("SWITCH");
     max_reading = 0;
     min_reading = 10000;
