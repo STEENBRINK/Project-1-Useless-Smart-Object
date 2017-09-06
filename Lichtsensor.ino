@@ -75,15 +75,15 @@ void CheckForSwitch(){
       //checks the state of the display, then switches to the other
       if (paper) {
         lcd.setCursor(0,0);
-        lcd.print("| Wood Here!  |");
+        lcd.print("|--Wood Here!");
         lcd.setCursor(0,1);
-        lcd.print("V Paper Here! V");
+        lcd.print("V Paper Here!--V");
         paper = !paper;
       } else {
         lcd.setCursor(0,0);
-        lcd.print("| Paper Here! |");
+        lcd.print("|-Paper Here!");
         lcd.setCursor(0,1);
-        lcd.print("V Wood Here!  V");
+        lcd.print("V  Wood Here!--V");
         paper = !paper;
       }
 
